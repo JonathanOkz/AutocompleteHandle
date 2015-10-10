@@ -8,6 +8,8 @@ UITextView subclass that automatically displays suggestions in real-time #hashta
 #import "autocompleteHandle.h"
 ```
 
+Don't missing to add `<AutocompleteHandleDelegate>` in your viewcontroller.h if you want to access at the delegate methods
+
 ## Usage
 #### Create AutocompleteHandle programmatically
 ```objc
@@ -15,7 +17,7 @@ AutocompleteHandle *autocompleteHandle = [[AutocompleteHandle alloc] initWithFra
 autocompleteHandle.delegate = self;
 [self.view addSubview:autocompleteHandle];
 ```
-Don't missing to add `<AutocompleteHandleDelegate>` in your viewcontroller.h if you want to access at the delegate methods
+
 #### Create AutocompleteHandle graphically
 * Drop the "UIView" element in your view
 * Set the class propriety of the view to 'AutocompleteHandle'
@@ -31,7 +33,7 @@ Don't missing to add `<AutocompleteHandleDelegate>` in your viewcontroller.h if 
 ```objc
 - (void)autocompleteHandleSelectedHandle:(nonnull NSString *)handle;
 ```
-All delegate methods of UITextView are also accessible
+All delegate methods of UITextView are also available
 ## Example
 Please launch the Xcode project in the 'Demo' folder
 
