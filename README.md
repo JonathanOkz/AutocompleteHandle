@@ -1,6 +1,8 @@
 # AutocompleteHandle
 UITextView subclass that automatically displays suggestions in real-time #hashtag and @Handle
 
+![Screencapture GIF](https://drive.google.com/uc?export=download&id=0BylrUpxiDVhWd1NEVGlNT0F6R3M)
+
 ## Installation
 * Drop the "AutocompleteHandle" folder into your project
 * Import AutocompleteHandle class in your project
